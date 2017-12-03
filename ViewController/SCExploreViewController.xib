@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SCExploreViewController">
+            <connections>
+                <outlet property="mapView" destination="dTL-HG-k3C" id="5SF-XY-OXv"/>
+                <outlet property="reloadButton" destination="UeU-UE-ntb" id="7Jq-kU-8dI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dTL-HG-k3C">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </mapView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UeU-UE-ntb">
+                    <rect key="frame" x="97" y="507" width="180" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="HQt-rT-sSF"/>
+                        <constraint firstAttribute="width" constant="180" id="cdw-W8-k2C"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="UeU-UE-ntb" secondAttribute="bottom" constant="120" id="DtH-md-I0l"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="dTL-HG-k3C" secondAttribute="trailing" id="Ns4-lC-va9"/>
+                <constraint firstItem="dTL-HG-k3C" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="b2p-dZ-Bqy"/>
+                <constraint firstItem="UeU-UE-ntb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bIP-Tc-XUc"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="dTL-HG-k3C" secondAttribute="bottom" id="igt-vX-gGv"/>
+                <constraint firstItem="dTL-HG-k3C" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="-20" id="yR7-yP-XtB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="34.5" y="52.5"/>
+        </view>
+    </objects>
+</document>
